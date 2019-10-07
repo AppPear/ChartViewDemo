@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,19 @@
 		0B970E682341F2C8003DB498 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B970E662341F2C8003DB498 /* LaunchScreen.storyboard */; };
 		0B970E732341F2C8003DB498 /* TestChartViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B970E722341F2C8003DB498 /* TestChartViewsTests.swift */; };
 		0B970E7E2341F2C8003DB498 /* TestChartViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B970E7D2341F2C8003DB498 /* TestChartViewsUITests.swift */; };
+		0B970E9423426D09003DB498 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B970E9223426D09003DB498 /* Interface.storyboard */; };
+		0B970E9623426D0B003DB498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B970E9523426D0B003DB498 /* Assets.xcassets */; };
+		0B970E9D23426D0B003DB498 /* WatchCharts Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B970E9C23426D0B003DB498 /* WatchCharts Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0B970EA223426D0B003DB498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B970EA123426D0B003DB498 /* ContentView.swift */; };
+		0B970EA423426D0B003DB498 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B970EA323426D0B003DB498 /* HostingController.swift */; };
+		0B970EA623426D0B003DB498 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B970EA523426D0B003DB498 /* ExtensionDelegate.swift */; };
+		0B970EA823426D0B003DB498 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B970EA723426D0B003DB498 /* NotificationController.swift */; };
+		0B970EAA23426D0B003DB498 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B970EA923426D0B003DB498 /* NotificationView.swift */; };
+		0B970EAC23426D0C003DB498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B970EAB23426D0C003DB498 /* Assets.xcassets */; };
+		0B970EAF23426D0C003DB498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B970EAE23426D0C003DB498 /* Preview Assets.xcassets */; };
+		0B970EB423426D0C003DB498 /* WatchCharts.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0B970E9023426D09003DB498 /* WatchCharts.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0B970EC223426E74003DB498 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0B970EC123426E74003DB498 /* SwiftUICharts */; };
+		0B970EC623427542003DB498 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0B970EC523427542003DB498 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +45,46 @@
 			remoteGlobalIDString = 0B970E572341F2C6003DB498;
 			remoteInfo = TestChartViews;
 		};
+		0B970E9E23426D0B003DB498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B970E502341F2C6003DB498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B970E9B23426D0B003DB498;
+			remoteInfo = "WatchCharts Extension";
+		};
+		0B970EB223426D0C003DB498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B970E502341F2C6003DB498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B970E8F23426D09003DB498;
+			remoteInfo = WatchCharts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B970EB823426D0C003DB498 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0B970E9D23426D0B003DB498 /* WatchCharts Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B970EBC23426D0C003DB498 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0B970EB423426D0C003DB498 /* WatchCharts.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B970E582341F2C6003DB498 /* TestChartViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestChartViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +101,21 @@
 		0B970E792341F2C8003DB498 /* TestChartViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestChartViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B970E7D2341F2C8003DB498 /* TestChartViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChartViewsUITests.swift; sourceTree = "<group>"; };
 		0B970E7F2341F2C8003DB498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B970E9023426D09003DB498 /* WatchCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B970E9323426D09003DB498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0B970E9523426D0B003DB498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B970E9723426D0B003DB498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B970E9C23426D0B003DB498 /* WatchCharts Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchCharts Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B970EA123426D0B003DB498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0B970EA323426D0B003DB498 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		0B970EA523426D0B003DB498 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0B970EA723426D0B003DB498 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0B970EA923426D0B003DB498 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		0B970EAB23426D0C003DB498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B970EAE23426D0C003DB498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B970EB023426D0C003DB498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B970EB123426D0C003DB498 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0B970EC023426E49003DB498 /* ChartView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ChartView; path = ../../../Desktop/ChartView; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B970EC223426E74003DB498 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +141,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B970E9923426D0B003DB498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B970EC623427542003DB498 /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,7 +158,10 @@
 				0B970E5A2341F2C6003DB498 /* TestChartViews */,
 				0B970E712341F2C8003DB498 /* TestChartViewsTests */,
 				0B970E7C2341F2C8003DB498 /* TestChartViewsUITests */,
+				0B970E9123426D09003DB498 /* WatchCharts */,
+				0B970EA023426D0B003DB498 /* WatchCharts Extension */,
 				0B970E592341F2C6003DB498 /* Products */,
+				0B970EBD23426D57003DB498 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +171,8 @@
 				0B970E582341F2C6003DB498 /* TestChartViews.app */,
 				0B970E6E2341F2C8003DB498 /* TestChartViewsTests.xctest */,
 				0B970E792341F2C8003DB498 /* TestChartViewsUITests.xctest */,
+				0B970E9023426D09003DB498 /* WatchCharts.app */,
+				0B970E9C23426D0B003DB498 /* WatchCharts Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +217,48 @@
 			path = TestChartViewsUITests;
 			sourceTree = "<group>";
 		};
+		0B970E9123426D09003DB498 /* WatchCharts */ = {
+			isa = PBXGroup;
+			children = (
+				0B970E9223426D09003DB498 /* Interface.storyboard */,
+				0B970E9523426D0B003DB498 /* Assets.xcassets */,
+				0B970E9723426D0B003DB498 /* Info.plist */,
+			);
+			path = WatchCharts;
+			sourceTree = "<group>";
+		};
+		0B970EA023426D0B003DB498 /* WatchCharts Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0B970EA123426D0B003DB498 /* ContentView.swift */,
+				0B970EA323426D0B003DB498 /* HostingController.swift */,
+				0B970EA523426D0B003DB498 /* ExtensionDelegate.swift */,
+				0B970EA723426D0B003DB498 /* NotificationController.swift */,
+				0B970EA923426D0B003DB498 /* NotificationView.swift */,
+				0B970EAB23426D0C003DB498 /* Assets.xcassets */,
+				0B970EB023426D0C003DB498 /* Info.plist */,
+				0B970EB123426D0C003DB498 /* PushNotificationPayload.apns */,
+				0B970EAD23426D0C003DB498 /* Preview Content */,
+			);
+			path = "WatchCharts Extension";
+			sourceTree = "<group>";
+		};
+		0B970EAD23426D0C003DB498 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0B970EAE23426D0C003DB498 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B970EBD23426D57003DB498 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B970EC023426E49003DB498 /* ChartView */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,12 +269,17 @@
 				0B970E542341F2C6003DB498 /* Sources */,
 				0B970E552341F2C6003DB498 /* Frameworks */,
 				0B970E562341F2C6003DB498 /* Resources */,
+				0B970EBC23426D0C003DB498 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0B970EB323426D0C003DB498 /* PBXTargetDependency */,
 			);
 			name = TestChartViews;
+			packageProductDependencies = (
+				0B970EC123426E74003DB498 /* SwiftUICharts */,
+			);
 			productName = TestChartViews;
 			productReference = 0B970E582341F2C6003DB498 /* TestChartViews.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +320,43 @@
 			productReference = 0B970E792341F2C8003DB498 /* TestChartViewsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0B970E8F23426D09003DB498 /* WatchCharts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B970EB923426D0C003DB498 /* Build configuration list for PBXNativeTarget "WatchCharts" */;
+			buildPhases = (
+				0B970E8E23426D09003DB498 /* Resources */,
+				0B970EB823426D0C003DB498 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B970E9F23426D0B003DB498 /* PBXTargetDependency */,
+			);
+			name = WatchCharts;
+			productName = WatchCharts;
+			productReference = 0B970E9023426D09003DB498 /* WatchCharts.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0B970E9B23426D0B003DB498 /* WatchCharts Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B970EB523426D0C003DB498 /* Build configuration list for PBXNativeTarget "WatchCharts Extension" */;
+			buildPhases = (
+				0B970E9823426D0B003DB498 /* Sources */,
+				0B970E9923426D0B003DB498 /* Frameworks */,
+				0B970E9A23426D0B003DB498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchCharts Extension";
+			packageProductDependencies = (
+				0B970EC523427542003DB498 /* SwiftUICharts */,
+			);
+			productName = "WatchCharts Extension";
+			productReference = 0B970E9C23426D0B003DB498 /* WatchCharts Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +378,12 @@
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 0B970E572341F2C6003DB498;
 					};
+					0B970E8F23426D09003DB498 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					0B970E9B23426D0B003DB498 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 				};
 			};
 			buildConfigurationList = 0B970E532341F2C6003DB498 /* Build configuration list for PBXProject "TestChartViews" */;
@@ -224,6 +395,8 @@
 				Base,
 			);
 			mainGroup = 0B970E4F2341F2C6003DB498;
+			packageReferences = (
+			);
 			productRefGroup = 0B970E592341F2C6003DB498 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +404,8 @@
 				0B970E572341F2C6003DB498 /* TestChartViews */,
 				0B970E6D2341F2C8003DB498 /* TestChartViewsTests */,
 				0B970E782341F2C8003DB498 /* TestChartViewsUITests */,
+				0B970E8F23426D09003DB498 /* WatchCharts */,
+				0B970E9B23426D0B003DB498 /* WatchCharts Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +432,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B970E8E23426D09003DB498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B970E9623426D0B003DB498 /* Assets.xcassets in Resources */,
+				0B970E9423426D09003DB498 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B970E9A23426D0B003DB498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B970EAF23426D0C003DB498 /* Preview Assets.xcassets in Resources */,
+				0B970EAC23426D0C003DB498 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +482,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B970E9823426D0B003DB498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B970EA423426D0B003DB498 /* HostingController.swift in Sources */,
+				0B970EA223426D0B003DB498 /* ContentView.swift in Sources */,
+				0B970EA823426D0B003DB498 /* NotificationController.swift in Sources */,
+				0B970EA623426D0B003DB498 /* ExtensionDelegate.swift in Sources */,
+				0B970EAA23426D0B003DB498 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,6 +507,16 @@
 			target = 0B970E572341F2C6003DB498 /* TestChartViews */;
 			targetProxy = 0B970E7A2341F2C8003DB498 /* PBXContainerItemProxy */;
 		};
+		0B970E9F23426D0B003DB498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B970E9B23426D0B003DB498 /* WatchCharts Extension */;
+			targetProxy = 0B970E9E23426D0B003DB498 /* PBXContainerItemProxy */;
+		};
+		0B970EB323426D0C003DB498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B970E8F23426D09003DB498 /* WatchCharts */;
+			targetProxy = 0B970EB223426D0C003DB498 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -311,6 +526,14 @@
 				0B970E672341F2C8003DB498 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0B970E9223426D09003DB498 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B970E9323426D09003DB498 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -554,6 +777,92 @@
 			};
 			name = Release;
 		};
+		0B970EB623426D0C003DB498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchCharts Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8J6DLW4UE6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchCharts Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samuandris.TestChartViews.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		0B970EB723426D0C003DB498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchCharts Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8J6DLW4UE6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchCharts Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samuandris.TestChartViews.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		0B970EBA23426D0C003DB498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J6DLW4UE6;
+				IBSC_MODULE = WatchCharts_Extension;
+				INFOPLIST_FILE = WatchCharts/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samuandris.TestChartViews.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		0B970EBB23426D0C003DB498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J6DLW4UE6;
+				IBSC_MODULE = WatchCharts_Extension;
+				INFOPLIST_FILE = WatchCharts/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.samuandris.TestChartViews.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,7 +902,36 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0B970EB523426D0C003DB498 /* Build configuration list for PBXNativeTarget "WatchCharts Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B970EB623426D0C003DB498 /* Debug */,
+				0B970EB723426D0C003DB498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B970EB923426D0C003DB498 /* Build configuration list for PBXNativeTarget "WatchCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B970EBA23426D0C003DB498 /* Debug */,
+				0B970EBB23426D0C003DB498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B970EC123426E74003DB498 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUICharts;
+		};
+		0B970EC523427542003DB498 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B970E502341F2C6003DB498 /* Project object */;
 }
