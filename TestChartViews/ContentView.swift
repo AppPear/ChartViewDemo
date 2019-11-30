@@ -24,6 +24,10 @@ struct ContentView: View {
                     Image(systemName: "chart.pie")
                     Text("Pie charts")
                 }}.tag(2)
+            LineChartsFull().tabItem { Group{
+                Image(systemName: "waveform.path.ecg")
+                Text("Full screen line charts")
+            }}.tag(3)
         }
     }
 }
@@ -48,6 +52,15 @@ struct PieCharts:View {
     var body: some View {
         VStack{
             PieChartView(data: [8,23,54,32,12,37,7,23,43], title: "Title")
+        }
+    }
+}
+
+struct LineChartsFull: View {
+    var body: some View {
+        VStack{
+            LineView(data: [8,23,54,32,12,37,7,23,43], title: "Line chart", legend: "Full screen").padding()
+            // legend is optional, use optional .padding()
         }
     }
 }
