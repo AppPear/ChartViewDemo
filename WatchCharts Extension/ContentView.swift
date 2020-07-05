@@ -12,8 +12,8 @@ struct ContentView: View {
     var body: some View {
         ScrollView{
             VStack{
-                BarChartView(data: [8,23,54,32,12,37,7,23,43], title: "Title", style: Styles.barChartStyleNeonBlueLight, form: Form.small)
-                BarChartView(data: [8,23,54,32,12,37,7,23,43], title: "Title", style: Styles.barChartStyleOrangeLight, form: Form.large)
+                BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Title", style: Styles.barChartStyleNeonBlueLight, form: ChartForm.small)
+                    BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Title", style: Styles.barChartStyleOrangeLight, form: ChartForm.large)
 //                BarChartView(data: [8,23,54,32,12,37,7,23,43], title: "Title", style: Styles.barChartStyleOrangeLight, form: Form.medium)
             }
         }//.edgesIgnoringSafeArea(.all)

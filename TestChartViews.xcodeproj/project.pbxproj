@@ -28,6 +28,7 @@
 		0B970EB423426D0C003DB498 /* WatchCharts.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0B970E9023426D09003DB498 /* WatchCharts.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0B970EC223426E74003DB498 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0B970EC123426E74003DB498 /* SwiftUICharts */; };
 		0B970EC623427542003DB498 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0B970EC523427542003DB498 /* SwiftUICharts */; };
+		30229C5824B102AC006F1DC1 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 30229C5724B102AC006F1DC1 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B970EC223426E74003DB498 /* SwiftUICharts in Frameworks */,
+				30229C5824B102AC006F1DC1 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +281,7 @@
 			name = TestChartViews;
 			packageProductDependencies = (
 				0B970EC123426E74003DB498 /* SwiftUICharts */,
+				30229C5724B102AC006F1DC1 /* SwiftUICharts */,
 			);
 			productName = TestChartViews;
 			productReference = 0B970E582341F2C6003DB498 /* TestChartViews.app */;
@@ -396,6 +399,7 @@
 			);
 			mainGroup = 0B970E4F2341F2C6003DB498;
 			packageReferences = (
+				30229C5624B102AC006F1DC1 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 0B970E592341F2C6003DB498 /* Products */;
 			projectDirPath = "";
@@ -922,6 +926,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		30229C5624B102AC006F1DC1 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		0B970EC123426E74003DB498 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -929,6 +944,11 @@
 		};
 		0B970EC523427542003DB498 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUICharts;
+		};
+		30229C5724B102AC006F1DC1 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30229C5624B102AC006F1DC1 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */

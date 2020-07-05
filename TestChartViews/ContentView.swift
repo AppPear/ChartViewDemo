@@ -35,7 +35,7 @@ struct ContentView: View {
 struct BarCharts:View {
     var body: some View {
         VStack{
-            BarChartView(data: [8,23,54,32,12,37,7,23,43], title: "Title", style: Styles.barChartStyleOrangeLight)
+            BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Title", style: Styles.barChartStyleOrangeLight)
         }
     }
 }
